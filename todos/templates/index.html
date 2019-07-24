@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todos</title>
+  <link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta24/shoelace.css">
+  <script src="{% static 'js/app.js' %}"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Todo list</h1>
+    <div id="todos-app">
+      Loading...
+    </div>
+    <form id="new-todo-form">
+      <div class="input-field">
+        <label for="new-todo">Create a new todo</label>
+        <input type="text" id="new-todo" required>
+      </div>
+
+      <button type="submit">Create</button>
+    </form>
+  </div>
+</body>
+</html>
